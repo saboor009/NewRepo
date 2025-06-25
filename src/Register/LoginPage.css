@@ -1,0 +1,300 @@
+/* Existing CSS (unchanged) */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  min-height: 100vh;
+}
+
+.login-card {
+  display: flex;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  padding: 30px;
+  margin: 20px;
+}
+
+.register-button a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.image-section {
+  background-color: #f3f3f3;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 14px;
+}
+
+.doctor-image-1 {
+  height: 350px;
+  width: 400px;
+  border-radius: 12px;
+  background-color: #9ED3E2;
+  margin-bottom: 24px;
+}
+
+.progress-indicators {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.progress-indicators span {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.progress-indicators .active {
+  background: #49adca;
+}
+
+.register-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.form-section {
+  padding: 30px;
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0.024);
+}
+
+.input-field:focus {
+  border: none;
+  outline: none;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.create-account-button {
+  width: 100%;
+  padding: 10px;
+  background: #49adca;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.or-divider hr {
+  flex: 1;
+  border: 0.5px solid #ccc;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.google-button,
+.facebook-button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.google-button {
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.facebook-button {
+  background: #4267B2;
+  color: white;
+}
+
+.alreadyaccount {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.success-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 600px) {
+  .login-card {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .image-section {
+    display: none; /* Hide the image section on mobile */
+  }
+
+  .register-button {
+    display: block; /* Ensure the button is visible */
+    width: 100%; /* Full width for mobile */
+    margin-top: 20px; /* Add some spacing */
+  }
+
+  .form-section {
+    padding: 20px;
+    width: 100%; /* Ensure form takes full width */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Reduce font size for mobile */
+  }
+
+  .input-field {
+    font-size: 0.9em; /* Reduce font size for mobile */
+  }
+
+  .create-account-button {
+    font-size: 0.9em; /* Reduce font size for mobile */
+  }
+
+  .alreadyaccount {
+    margin-top: 30px; /* Reduce margin for mobile */
+  }
+
+  .or-divider {
+    margin: 15px 0; /* Reduce margin for mobile */
+  }
+
+  .social-buttons {
+    flex-direction: column; /* Stack social buttons vertically */
+    gap: 5px;
+  }
+
+  .google-button,
+  .facebook-button {
+    width: 100%; /* Full width for mobile */
+  }
+}
+
+.patient{
+  height: 350px;
+  width: 400px;
+  background-color: #9ED3E2;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}

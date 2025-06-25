@@ -1,0 +1,387 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Intro+Demo:wght@400&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    color: #2D2D2D;
+    padding: 16px 150px 20px;
+ 
+    justify-content: space-between;
+}
+
+/* Top Row */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+}
+
+/* Logo */
+.logo {
+    font-family: 'Intro Demo', sans-serif; 
+    font-weight: bold;
+    font-size: 36px;
+    color: #2D2D2D;
+    
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 400px; /* Adjusted for desktop */
+    height: 44px;
+    border-radius: 16px;
+    padding: 0 10px;
+    background-color: #EAEAEA;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+.search-bar input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Login Section */
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.usericon {
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+}
+
+.login-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-prompt {
+    font-size: 12px;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.account-type {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Divider Line */
+.divider {
+    border: none;
+    border-top: 0.3px solid rgba(0, 0, 0, 0.178);
+    margin: 10px 0;
+}
+
+/* Bottom Row */
+.bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    left: 60%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #2D2D2D;
+    transition: width 0.6s ease, left 0.6s ease;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Mobile Navigation (Hidden by default on larger screens) */
+.mobile-nav {
+    display: none;
+
+}
+
+/* Mobile Search Bar */
+.search-bar-mobile {
+   
+    display: none; /* Initially hidden */
+}
+
+
+/* Mobile Menu */
+.mobile-menu {
+   
+    position: fixed;
+    top: 0;
+    right: -100%; /* Offscreen by default */
+    height: 100vh;
+    width: 70%;
+    background-color: white;
+    color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+/* Close (Cross) Button */
+.close-btn {
+   
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ff4c4c;
+}
+
+.mobile-menu.open {
+    right: 0; /* Move into view when open */
+}
+
+
+/* Add these styles to your Navbar.css */
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logout-btn {
+    font-size: 14px;
+    color: #1a75ff;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.logout-btn:hover {
+    color: #0055cc;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 840px) {
+    .navbar{
+        
+        display: flex;
+        justify-content:start;
+        align-items:start;
+        width: 100%;
+        padding: 16px;
+        margin: 0px;
+    }
+    
+/* Show mobile navigation */
+.mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile logo font size */
+.mobile-nav .logo {
+    font-size: 24px; 
+    font-family: 'Intro Demo', sans-serif; 
+    font-weight: bold;
+}
+
+/* Hide desktop navigation */
+.top-row, .bottom-row {
+    display: none;
+}
+
+/* Show mobile search bar */
+.search-bar-mobile {
+   
+    width: 100%;
+    display: flex; /* Ensure it's shown on mobile */
+    align-items: center;
+  
+    
+    height: 44px;
+    border-radius: 16px;
+    padding: 0 10px;
+    background-color: #EAEAEA;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-top:  20px; /* Ensure some spacing */
+}
+
+.search-bar-mobile .search-icon {
+    height: 24px;
+  
+
+}
+
+.search-bar-mobile input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+/* Divider visibility */
+.desktop-divider {
+    display: none;
+  
+}
+
+/* Mobile Menu Links */
+.mobile-menu .nav-links {
+    display: flex;
+    flex-direction: column; /* Vertical position */
+   /* Add padding for spacing */
+ 
+
+}
+
+.mobile-menu .nav-links li {
+   
+    
+    font-size: 18px; /* Adjust font size for mobile */
+}
+/* Hamburger Menu */
+.hamburger {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #2D2D2D;
+  }
+
+
+/* Mobile Navigation Header */
+.mobile-menu-header {
+
+    display: flex;
+    justify-content: start; /* Aligns items on the same line */
+    align-items: center; /* Vertically centers items */
+    width: 100%; 
+    padding: 10px;/* Ensures it takes full width */
+     /* Adjust padding as needed */
+
+   
+}
+
+/* Mobile Logo Style */
+.menu-logo {
+     margin-right: 70px;
+    font-family: 'Intro Demo', sans-serif; 
+    font-size: 24px; 
+    color: #2D2D2D;
+   font-weight:900;
+   
+}
+
+
+
+.close-btn:hover {
+    color: #ff4c4c; /* Optional: Change color on hover */
+}
+
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Offscreen by default */
+    height: 100vh;
+    width: 70%;
+    background-color: white;
+    color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure items start from the top */
+    align-items: flex-start; /* Align items to the left */
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 20px; /* Keep some top padding */
+    padding-left: 32px; /* Remove left padding */
+}
+
+/* Mobile Menu Links */
+.mobile-menu .nav-links {
+    display: flex;
+    flex-direction: column; /* Vertical position */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure full width */
+}
+
+/* Mobile Menu Links Items */
+.mobile-menu .nav-links li {
+    border: none; /* Optional: Remove border */
+
+    font-size: 14px; /* Adjust font size for mobile */
+    width: 100%; /* Ensure links take full width */
+    text-align: left; /* Align text to the left */
+   padding-top: 12px;
+   padding-bottom: 12px;
+}
+
+    
+}
+
+
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+

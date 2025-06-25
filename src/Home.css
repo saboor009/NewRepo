@@ -1,0 +1,225 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #eaeaea;
+    font-family: Arial, sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+
+
+
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+     
+   
+    
+  }
+  
+  .content {
+    padding-top: 70px;
+    text-align: start;
+  
+    width: 40%;
+  }
+  
+  .heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  
+  .subheading {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .primaryButton {
+    width: 281px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #49adca;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .secondaryButton {
+    width: 281px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    color: #49adca;
+    border: 2px solid #49adca;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .primaryButton-mobile {
+    width: 340px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #49adca;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+  
+  .secondaryButton-mobile {
+    width: 340px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    color: #49adca;
+    border: 2px solid #49adca;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .imageContainer {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .image {
+    background-image: url('./Group 5.png'); /* Replace with your image path */
+    background-size: 440px 540px; /* Set the desired width and height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 540px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .serach-main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.178);
+    padding-left: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 600px;
+    height: 100;
+ 
+  
+  }
+  
+  .doctor-dropdown {
+    border: none;
+    margin-right: 20px;
+    width: 90px;
+    font-size: 16px;
+    background-color: #eaeaea;
+  }
+  
+  .search-input {
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .search-button:hover {
+    color: #007bff;
+  }
+  
+  .get-started:hover {
+    background-color: #49adca;
+  }
+  
+  @media (max-width: 840px) {
+    .container {
+        padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .search-container {
+      display: none;
+    }
+  
+    .main {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .heading {
+      font-size: 28px;
+    }
+  
+    .subheading {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .imageContainer {
+      order: 3;
+      margin-top: 15px;
+    }
+  
+    .primaryButton,
+    .secondaryButton {
+      width: 100%;
+    }
+  
+    .image {
+      background-image: none;
+    }
+  }
+  

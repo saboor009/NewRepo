@@ -1,0 +1,326 @@
+.testimonials-container {
+   
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+ 
+  
+  .header h4 {
+    color: #49adca;
+    font-weight: bold;
+   
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    
+
+  }
+  
+  .reviews {
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;
+ 
+  }
+ 
+  .reviews .stars {
+    color: #49adca;
+   
+    
+  }
+  
+  .testimonials-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+  }
+  
+  .testimonial-card {
+   
+    height:100%;
+    width: 240px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+
+  }
+  
+  .testimonial-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .testimonial-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card .rating {
+    color: #49adca;
+    margin-bottom: 8px;
+  }
+  
+  .testimonial-card h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .testimonials-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+
+  
+
+  .star-icon {
+    width: 40px;
+    height: 40px; /* Adjust the size as needed */
+    margin-right: 4px;
+  }
+
+  .star-small-icon{
+
+    width: 24px;
+    height: 24px; /* Adjust the size as needed */
+    margin-right: 4px;
+  }
+
+  .next-button {
+    background: none;
+    background-color: none;
+    border: none;
+
+  }
+
+  .turspilot{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .reviewunder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (max-width: 840px) {
+    .header h1 {
+      font-size: 22px; /* Slightly smaller heading for smaller screens */
+      margin-top: 8px;
+      margin-bottom: 8px;
+    
+    }
+    .stars{
+     width:110px;
+    
+    }
+    .star-icon{
+      height: 17px;
+      width: 17px;
+
+    }
+    .reviews {
+      display: flex;
+      flex-direction: row; /* Stack reviews vertically */
+      
+      width: 100%;
+      justify-content: space-between;
+      gap: 4px; /* Add spacing between items */
+ 
+    }
+    
+  .turspilot{
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    
+    width:170px;
+    align-items: center;
+  }
+  
+    .testimonials-scroll {
+      width: 100%;
+     
+      padding: 10px 0; /* Reduce padding for smaller screens */
+      gap: 10px; /* Reduce the gap between cards */
+    }
+  
+    .testimonial-card {
+      height: auto; /* Allow flexible height for better content fitting */
+      width: 180px; /* Use most of the screen width */
+      padding: 20px; /* Maintain spacing */
+      margin: 0 auto; /* Center cards horizontally */
+  
+    }
+  
+    .testimonial-card h2 {
+      font-size: 16px; /* Slightly smaller title font */
+    }
+  
+    .testimonial-card p {
+      font-size: 13px; /* Adjust paragraph font size for readability */
+    }
+  
+    .testimonial-card h3 {
+      font-size: 13px; /* Adjust author font size */
+    }
+  
+    .star-small-icon {
+      width: 16px; /* Smaller stars for reviews */
+      height: 16px;
+      margin-right: 3px;
+    }
+  
+    .next-button {
+      font-size: 14px; 
+    }
+  }
+  
+  @media (max-width: 768px) and (min-width: 381px) {
+    .testimonials-container {
+      padding: 10px;
+      border-radius: 8px;
+
+    }
+  
+    .header h1 {
+      font-size: 20px; /* Adjust font size for better readability */
+      margin: 8px 0;
+    }
+  
+    .turspilot {
+      font-size: 12px;
+      text-align: center;
+      width: auto;
+      margin-bottom: 8px;
+    }
+  
+    .reviewunder {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .reviews {
+      display: flex;
+      flex-direction: row; /* Align stars and text horizontally */
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+    }
+  
+    .stars {
+      gap: 5px;
+    }
+  
+    .testimonials-scroll {
+      padding: 10px 0;
+      gap: 10px;
+      border: none; /* Optional: Remove border for aesthetics */
+      width: 100%;
+    }
+  
+    .testimonial-card {
+      width: 180px; /* Smaller but manageable card size */
+      margin: 0 auto;
+      padding: 15px;
+    }
+  
+    .testimonial-card h2 {
+      font-size: 16px;
+    }
+  
+    .testimonial-card p {
+      font-size: 13px;
+    }
+  
+    .testimonial-card h3 {
+      font-size: 13px;
+    }
+  
+    .next-button {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  }
+  
+  /* Adjustments specifically for 380px and below */
+  @media (max-width: 380px) {
+    .testimonials-container {
+      padding: 0;
+    }
+  
+    .header h1 {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  
+    .turspilot {
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      text-align: center;
+      width: auto;
+    }
+  
+    .reviewunder {
+            display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .reviews {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 4px;
+ 
+    }
+  
+    .stars {
+      gap: 4px;
+    }
+  
+    .testimonials-scroll {
+    
+      width: 100%;
+    }
+  
+    .testimonial-card {
+
+      margin: 0 auto;
+    }
+  
+    .testimonial-card h2 {
+      font-size: 14px;
+    }
+  
+    .testimonial-card p {
+      font-size: 11px;
+    }
+  
+    .testimonial-card h3 {
+      font-size: 11px;
+    }
+  
+    .next-button {
+      font-size: 10px;
+      padding: 5px 8px;
+    }
+  }
+  
+  

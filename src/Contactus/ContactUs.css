@@ -1,0 +1,133 @@
+/* Base Styles */
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px; 
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #EAEAEA;
+  height: auto; /* Adjust height for flexibility */
+
+
+}
+
+/* Flex Container */
+.contact-form-container {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  gap: 20px; /* Add spacing between columns */
+ }
+
+/* Form and Details Sections */
+.contact-form, 
+.contact-details {
+  flex: 1 1 45%; /* Flexible width, shrinks below 1200px */
+  max-width: 45%; /* Maintain proportional size */
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+  max-width: 55%; /* Wider for larger screens */
+}
+
+/* Form Fields */
+.contact-form input,
+.contact-form textarea {
+  width: 300px; /* Full width for input fields */
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Submit Button */
+.contact-form button.submit-btn {
+  background-color: #49ADCA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 300px;
+}
+
+.contact-form button.submit-btn:hover {
+  background-color: #0095be;
+}
+
+/* Contact Info */
+.contact-details .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info .email, 
+.contact-info .location, 
+.contact-info .phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .contact-form-container {
+    gap: 15px;
+  }
+
+  .contact-form, 
+  .contact-details {
+    flex: 1 1 48%; /* Adjust width to fit medium screens */
+    max-width: 48%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-form, 
+  .contact-details {
+    flex: 1 1 100%; /* Stack vertically for tablet screens */
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column; /* Stack form and details vertically */
+    gap: 20px;
+  }
+
+  .contact-form, 
+  .contact-details {
+    width: 100%;
+    max-width: 100%; /* Full width for small screens */
+  }
+}
+
+/* Additional Small-Screen Adjustments */
+@media screen and (max-width: 576px) {
+  .contact-us {
+    padding-left: 20px;
+    padding-right: 20px; /* Reduce padding for smaller devices */
+  }
+
+  .contact-info .email, 
+  .contact-info .location, 
+  .contact-info .phone {
+    padding: 10px; /* Reduce padding inside contact info cards */
+  }
+
+  .contact-form h1 {
+    font-size: 1.5rem; /* Smaller heading for mobile screens */
+  }
+}

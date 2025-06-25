@@ -1,0 +1,505 @@
+
+/* Container */
+.appointments-container {
+    padding: 20px;
+    background-color: #EAEAEA;
+}
+
+/* Header */
+.appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.toggle-container {
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.toggle-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.toggle-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+.appointments-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Section */
+.appointments-section {
+    padding: 20px;
+    gap: 20px;
+    border-radius: 15px;
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointments-subtitle {
+    width: 100%;
+    padding-left: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Appointment Card */
+.donotmakegloble {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: #fefefe;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* width: 80%; */
+}
+
+.appointment-details {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-label {
+    display: block;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 5px 10px;
+    background-color: #ffeded;
+    color: #d9534f;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.add-calendar-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.video-call-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    /* gap between videos */
+}
+
+.local-video,
+.remote-video {
+    width: 600px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.end-call-button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* width: 50%; */
+    height: 50px;
+}
+
+.end-call-button:hover {
+    background-color: #4ba3c7;;
+}
+
+
+.add-calendar-button {
+
+    padding: 10px 20px;
+    background-color: #4ba3c7;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* width: 50%; */
+    height: 50px;
+    justify-content: center;
+
+}
+
+.cancel-button {
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* width: 50%; */
+    height: 50px;
+}
+
+/* Doctor Profile Image */
+.doctor-profile {
+    /* flex-shrink: 0; */
+    background-color: #5db6cea8;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+}
+
+.doctor-image-1 {
+    width: 270px;
+    height: 380px;
+    background-color: none;
+}
+/* Add this to your Upcoming.css file */
+.doctor-image-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    color: #666;
+    font-size: 12px;
+}
+.calender-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Toggle */
+.toggle-container {
+    cursor: pointer;
+    width: 120px;
+}
+
+.toggle-text {
+    background-color: transparent;
+    border: 2px solid #d9d9d9;
+    /* Light grey border */
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 119px;
+}
+
+.toggle-text.upcoming {
+    color: white;
+    background-color: #49ADCA;
+}
+
+.toggle-text.past {
+    color: white;
+    background-color: black;
+}
+
+.view-details-button {
+    padding: 10px 20px;
+    background-color: #4ba3c7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    height: 50px;
+}
+
+
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    .appointments-header {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .appointments-title {
+        font-size: 20px;
+    }
+
+    /* Appointment Card */
+    .appointment-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* Doctor Profile */
+    .doctor-profile-1 {
+        width: 100%;
+        height: 200px;
+        margin-top: 15px;
+
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .doctor-image-1 {
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+
+    }
+
+    .doctor-image-2 {
+        width: 40%;
+    }
+
+    /* Buttons */
+    .add-calendar-button,
+    .cancel-button {
+        width: 100%;
+        height: 50px;
+    }
+
+    .toggle-container {
+        width: 100%;
+    }
+
+    .toggle-text {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .appointments-container {
+        padding: 20px;
+        background-color: #EAEAEA;
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .toggle-container {
+        width: 290px;
+    }
+
+    .appointments-subtitle {
+
+        width: 380px;
+
+    }
+
+    .appointments-header {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .appointments-title {
+        font-size: 20px;
+
+    }
+
+    /* Appointment Card */
+    .appointment-card {
+        padding: 20px;
+        width: 300px;
+    }
+
+    .doctor-profile {
+        width: 70%;
+        height: 180px;
+    }
+
+    .doctor-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Buttons */
+    .add-calendar-button,
+    .cancel-button {
+        width: 100%;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .appointment-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .doctor-profile-1 {
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    .appointment-details {
+        margin-left: 0;
+    }
+
+    .toggle-text {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .appointments-title {
+        font-size: 20px;
+    }
+
+    .view-details-button,
+    .add-calendar-button {
+        width: 100%;
+
+    }
+
+}
+
+/* ...existing styles... */
+
+/* Remove any duplicate tooltip styles and replace with these */
+
+/* Base button styling */
+.add-calendar-button {
+  position: relative;
+}
+
+/* Disabled button styling */
+.add-calendar-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: all !important; /* Important to ensure hover works on disabled buttons */
+}
+
+/* Tooltip base styling */
+.tooltip {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 100;
+  display: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: auto;
+  text-align: center;
+}
+
+/* Show tooltip on hover */
+.add-calendar-button:disabled:hover .tooltip {
+  display: block !important;
+}
+
+/* Add arrow to tooltip */
+.tooltip:after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #333;
+}
